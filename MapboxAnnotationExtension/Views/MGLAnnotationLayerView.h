@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-@import Mapbox;
+@import VietMap;
 @class MGLAnnotationController;
 
 NS_ASSUME_NONNULL_BEGIN

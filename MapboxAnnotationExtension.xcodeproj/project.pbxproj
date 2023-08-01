@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -536,9 +536,9 @@
 				1F40B9A522BC1B03003DB389 /* Sources */,
 				1F40B9A622BC1B03003DB389 /* Frameworks */,
 				1F40B9A722BC1B03003DB389 /* Resources */,
-				AFB8D76DBCE3768DF55B2C2C /* [CP] Embed Pods Frameworks */,
 				1FDAB58C22BD8DD7003D6D34 /* Embed Frameworks */,
 				1FDAB57422BD7877003D6D34 /* Insert Mapbox Access Token */,
+				64194FEE0B8C9F016E47A43E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -576,7 +576,7 @@
 				1FDAB5BF22C3FAEB003D6D34 /* Sources */,
 				1FDAB5C022C3FAEB003D6D34 /* Frameworks */,
 				1FDAB5C122C3FAEB003D6D34 /* Resources */,
-				777E5434467A9CA7B9086AF6 /* [CP] Embed Pods Frameworks */,
+				6646FEA13BEDD971D070EBF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -734,7 +734,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		777E5434467A9CA7B9086AF6 /* [CP] Embed Pods Frameworks */ = {
+		64194FEE0B8C9F016E47A43E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6646FEA13BEDD971D070EBF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -771,23 +788,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AFB8D76DBCE3768DF55B2C2C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1173,8 +1173,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3519048506DD7AFBB754731 /* Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = L276863CKR;
 				INFOPLIST_FILE = MapboxAnnotationExtensionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1184,6 +1185,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxAnnotationExtensionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1192,8 +1194,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC18D5CE8AECD3248807BF64 /* Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GJZR2MEM28;
+				DEVELOPMENT_TEAM = L276863CKR;
 				INFOPLIST_FILE = MapboxAnnotationExtensionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1203,6 +1206,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxAnnotationExtensionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

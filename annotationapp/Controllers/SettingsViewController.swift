@@ -1,5 +1,5 @@
 import UIKit
-import Mapbox
+import VietMap
 import MapboxAnnotationExtension
 
 class SettingsViewController: UIViewController {
